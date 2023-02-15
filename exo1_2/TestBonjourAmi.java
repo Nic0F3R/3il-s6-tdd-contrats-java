@@ -15,5 +15,10 @@ class TestBonjourAmi {
 	void testBonjourAmi2() {
 		assertEquals("Bonjour, ami.", BonjourAmi.bonjourAmi(null));
 	}
+	
+	@Test
+	void testBonjourAmi3() {
+		assertEquals("BONJOUR, ARTHUR.", BonjourAmi.bonjourAmi("ARTHUR"));
+	}
 
 }
