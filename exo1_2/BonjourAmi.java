@@ -4,8 +4,15 @@ public class BonjourAmi {
 
 	public static String bonjourAmi(String pfNom) {
 		
-		return "Bonjour, " + pfNom + ".";
+		String res = "";
 		
+		if(pfNom == null) {
+			res = "Bonjour, ami.";
+		} else {
+			res = "Bonjour, " + pfNom + ".";
+		}
+		
+		return res;
 		
 	}
 	
