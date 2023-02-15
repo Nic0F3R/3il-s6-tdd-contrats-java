@@ -9,7 +9,14 @@ public class BonjourAmi {
 		if(pfNom == null) {
 			res = "Bonjour, ami.";
 		} else {
-			res = "Bonjour, " + pfNom + ".";
+			
+			// Teste si le nom est tout en majuscules
+			if(pfNom.equals(pfNom.toUpperCase())) {
+				res = "BONJOUR, " + pfNom + ".";
+			} else {
+				res = "Bonjour, " + pfNom + ".";
+			}
+			
 		}
 		
 		return res;
