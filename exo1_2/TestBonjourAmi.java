@@ -7,8 +7,13 @@ import org.junit.jupiter.api.Test;
 class TestBonjourAmi {
 
 	@Test
-	void test() {
+	void testBonjourAmi1() {
 		assertEquals("Bonjour, Arthur.", BonjourAmi.bonjourAmi("Arthur"));
+	}
+	
+	@Test
+	void testBonjourAmi2() {
+		assertEquals("Bonjour, ami.", BonjourAmi.bonjourAmi(null));
 	}
 
 }
