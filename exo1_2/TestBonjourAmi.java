@@ -18,7 +18,12 @@ class TestBonjourAmi {
 	
 	@Test
 	void testBonjourAmi3() {
-		assertEquals("BONJOUR, ARTHUR.", BonjourAmi.bonjourAmi("ARTHUR"));
+		assertEquals("BONJOUR, ARTHUR !", BonjourAmi.bonjourAmi("ARTHUR"));
+	}
+	
+	@Test
+	void testBonjourAmi4() {
+		assertEquals("Bonjour, Alain et Arthur.", BonjourAmi.bonjourAmi("Alain", "Arthur"));
 	}
 
 }
